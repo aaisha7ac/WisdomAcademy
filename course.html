@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Schoo Website Design</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class = "sub-header">
+            <nav>
+                <a href = "index.html"><img src="images/logo.png"></a>
+                <div class = "nav-links" id = "navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick = "hideMenu()"></i>
+
+                    <ul>
+                        <li><a href = "">HOME</a></li>
+                        <li><a href = "">ABOUT</a></li>
+                        <li><a href = "">COURSE</a></li>
+                        <li><a href = "">BLOG</a></li>
+                        <li><a href = "">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick = "showMenu()"></i>
+            </nav>
+
+            <h1>Our Courses</h1>
+        </section>
+
+
+        <!-- course -->
+        <section class = "course">
+            <h1>Courses We Offer</h1>
+            <p>
+                Our school provides a diverse array of courses, spanning the realms of both science and management. From cutting-edge scientific disciplines to comprehensive management studies, our curriculum caters to the academic aspirations of students seeking a broad spectrum of knowledge and skills.</p>
+    
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>The intermediate course in our school serves as a pivotal bridge between foundational education and specialized studies.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>A degree provided in school signifies the successful attainment of specialized knowledge and skills within a particular academic discipline.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Graduation</h3>
+                    <p>Graduation in school marks the culmination of a student's educational journey, symbolizing the completion of a prescribed course of study.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- facilites -->
+        <section class="facilites">
+            <h1>Our Facilities</h1>
+            <p>
+                School facilities encompass the physical and infrastructural resources that support an effective learning environment, including classrooms, laboratories, libraries, and recreational spaces. These facilities play a vital role in fostering a conducive atmosphere for academic growth and overall student development.</p>
+                <div class="row">
+                    <div class="facilities-col">
+                        <img src = "images/library.png">
+                        <h3>Library</h3>
+                        <p>It serves as a quiet haven for learning, research, and intellectual exploration, fostering a culture of literacy and curiosity within the educational community.</p>
+                    </div>
+                    <div class="facilities-col">
+                        <img src = "images/basketball.png">
+                        <h3>Play Ground</h3>
+                        <p>It serves as a quiet haven for learning, research, and intellectual exploration, fostering a culture of literacy and curiosity within the educational community.</p>
+                    </div>
+                    <div class="facilities-col">
+                        <img src = "images/cafeteria.png">
+                        <h3>Tasty and healthy food</h3>
+                        <p>The school cafeteria provides a communal space where students gather to nourish themselves and socialize during breaks.</p>
+                    </div>
+                </div>
+           </section>
+
+   
+    
+   <!-- footer -->
+
+   <section class="footer">
+    <h4>About Us</h4>
+    <p> Explore our rich history, values, and dedication to cultivating a community where innovation, diversity, and academic excellence thrive.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+   </section>
+
+   
+   <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+    </body> 
+</html>
